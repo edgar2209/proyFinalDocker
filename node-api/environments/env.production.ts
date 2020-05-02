@@ -12,7 +12,7 @@ export default {
         EXPIRES: 5000   // 5 segundos
     },
     MONGODB: {
-        HOST: '192.168.116.128',
+        HOST: '192.168.76.138',
         PORT: 27017,
         USER_NAME: 'dbo-operador',
         USER_PASSWORD: 'operador123',
