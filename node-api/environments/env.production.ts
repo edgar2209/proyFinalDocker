@@ -14,8 +14,8 @@ export default {
     MONGODB: {
         HOST: '192.168.76.138',
         PORT: 27017,
-        USER_NAME: 'dbo-operador',
-        USER_PASSWORD: 'operador123',
+        USER_NAME: 'dba-root',
+        USER_PASSWORD: 'mongoadminpwd',
         DEFAULT_DATABASE: 'dbMTWDM'
     }
 };
