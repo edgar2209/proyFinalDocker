@@ -1,0 +1,26 @@
+<a class="btn btn-primary btn-lg m-3" [routerLink]="['/home']" role="button">Ir a home</a>
+
+<div class="text-center">
+  <div class="btn-group m-3" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Cars']" routerLinkActive="active" >Autos</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Motorcycle']" routerLinkActive="active">Motocicletas</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Buses']" routerLinkActive="active">Camionetas</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Ships']" routerLinkActive="active">Botes</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Planes']" routerLinkActive="active">Aviones</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Trains']" routerLinkActive="active">Trenes</button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<!-- <div class="card-columns m-3"> -->
+  <!-- {{misdatos | json}} -->
+    <!-- <div class="card" *ngFor="let item of misdatos2">
+      <img src="assets/images/productos/{{item.codigo}}.jpg" class="card-image-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.nombre}}</h5>
+        <p class="card-text">{{item.descripcion}}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>    
+</div> -->

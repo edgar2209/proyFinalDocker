@@ -1,0 +1,28 @@
+<p>paises works!</p>
+
+<div class="card-columns m-3">
+    <!-- {{misdatos | json}} -->
+      <div class="card" *ngFor="let item of paises">
+        <img src="{{item.flag}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{item.name}}</h5>
+          <p class="card-text">{{item.capital}}</p>
+          <p class="card-text">{{item.population}}</p>
+          <p class="card-text" *ngFor="let item2 of item.currencies">{{item2.name}}</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>    
+  </div>
+
+  <!-- <div class="card-columns">
+    <div class="card" *ngFor="let item of paises">
+      <img src="{{item.flag}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}}</h5>
+        <p class="card-text">{{item.capital}}</p>
+        <p class="card-text">{{item.population}}</p>
+        <p class="card-text" *ngFor="let item2 of item.currencies">{{item2.name}}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div> -->
